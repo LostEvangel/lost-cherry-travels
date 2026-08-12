@@ -22,6 +22,16 @@ trips/年份-目的地/
 
 新建一篇时，可复制 `_templates/分享向回顾攻略.md` 到对应行程目录，再改成 `大纲.md` / 扩写成 `攻略.md`。
 
+## 导出 HTML（mdflow）
+
+已全局安装现成工具 [@rongyan/mdflow-cli](https://www.npmjs.com/package/@rongyan/mdflow-cli)。杂志暖色示例：
+
+```bash
+mdflow trips/2026-烟台威海/攻略.md --theme=优雅 --primary-color=活力橘 --wxoutput
+```
+
+同目录生成 `攻略.html`（预览/分享）和 `攻略.wxhtml`（公众号粘贴用）。发给别人时请连同 `assets/` 一起打包。
+
 ## 远程
 
 https://github.com/LostEvangel/lost-cherry-travels
