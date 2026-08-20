@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "embed-images": "node tools/embed-images.mjs"
+    "embed-images": "node tools/embed-images.mjs",
+    "compress-image": "node tools/compress-image.mjs"
   },
   "dependencies": {
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.5"
   }
 }
