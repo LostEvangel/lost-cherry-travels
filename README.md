@@ -58,6 +58,27 @@ node tools/embed-images.mjs trips/2026-开封郑州洛阳/攻略.wxhtml
 
 规则：最长边约 1200px、JPEG 质量约 75。外链图与已是 `data:` 的图会跳过。
 
+## 压缩单张图片（compress-image）
+
+把单张图压到不超过指定大小，并尽量贴近目标（不超额猛压）。依赖同上，需先 `npm install`。
+
+```bash
+node tools/compress-image.mjs <图片路径> <目标大小>
+node tools/compress-image.mjs <图片路径> <目标大小> --out <输出路径>
+```
+
+示例：
+
+```bash
+# 压到 10MB 以内（默认覆盖原文件；请先关闭编辑器里的图片预览）
+node tools/compress-image.mjs trips/2026-烟台威海/assets/D2.JPG 10M
+
+# 写到新文件，避免占用冲突
+node tools/compress-image.mjs trips/2026-开封郑州洛阳/assets/龙门亮灯.JPG 10M --out trips/2026-开封郑州洛阳/assets/龙门亮灯.10m.JPG
+```
+
+目标大小支持：`10M` / `10MB` / `500K` / `500KB` / 纯字节数。已小于目标则跳过。若原文件被占用，会另存为 `*.compressed.JPG` 并提示。
+
 ## 远程
 
 https://github.com/LostEvangel/lost-cherry-travels
