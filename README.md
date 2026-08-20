@@ -27,10 +27,36 @@ trips/年份-目的地/
 已全局安装现成工具 [@rongyan/mdflow-cli](https://www.npmjs.com/package/@rongyan/mdflow-cli)。杂志暖色示例：
 
 ```bash
-mdflow trips/2026-烟台威海/攻略.md --theme=优雅 --primary-color=活力橘 --wxoutput
+mdflow trips/2026-开封郑州洛阳/攻略.md --theme=优雅 --primary-color=活力橘 --wxoutput
 ```
 
-同目录生成 `攻略.html`（预览/分享）和 `攻略.wxhtml`（公众号粘贴用）。发给别人时请连同 `assets/` 一起打包。
+同目录生成 `攻略.html`（预览/分享）和 `攻略.wxhtml`（公众号粘贴用）。
+
+相对路径配图在本地打开 HTML 时正常；**单文件分享或减少对 `assets/` 依赖**时，再做一步内嵌。
+
+## 图片内嵌（可复用）
+
+首次在本仓库执行一次依赖安装：
+
+```bash
+npm install
+```
+
+对 mdflow 产物压缩并 base64 内嵌（不覆盖原文件）：
+
+```bash
+node tools/embed-images.mjs trips/2026-开封郑州洛阳/攻略.html
+node tools/embed-images.mjs trips/2026-开封郑州洛阳/攻略.wxhtml
+```
+
+生成：
+
+| 文件 | 用途 |
+| --- | --- |
+| `攻略.inline.html` | 单文件预览 / 发给别人（图已内嵌） |
+| `攻略.inline.wxhtml` | 改名为 `.html` 后浏览器打开 → Ctrl+A → Ctrl+C → 粘贴公众号 |
+
+规则：最长边约 1200px、JPEG 质量约 75。外链图与已是 `data:` 的图会跳过。
 
 ## 远程
 

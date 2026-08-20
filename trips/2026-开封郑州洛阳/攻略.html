@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>开封郑州洛阳五日：一路向西的古都短途</title>
+  <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/highlightjs/11.11.1/styles/github-dark.min.css" />
+  <style>:root {
+  --md-primary-color: #FA5151;
+  --md-font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
+  --md-font-size: 16px;
+  --foreground: 0 0% 15%;
+  --background: 0 0% 100%;
+  --blockquote-background: #f7f7f7;
+}
+
+body {
+  margin: 0;
+}
+
+#output p {
+  
+  
+}
+
+.hljs.code__pre {
+  position: relative;
+  overflow: auto;
+  padding: 0;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.hljs.code__pre > code {
+  display: block;
+  padding: 16px;
+  overflow-x: auto;
+  white-space: inherit;
+  word-break: inherit;
+  overflow-wrap: inherit;
+}
+
+.hljs.code__pre > .mac-sign {
+  display: flex;
+}
+
+.code-line {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.line-number {
+  user-select: none;
+  text-align: right;
+  opacity: 0.45;
+}
+
+.line-content {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+figure {
+  margin: 1.5em 8px;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figcaption {
+  margin-top: 0.5em;
+}
+
+table.preview-table {
+  width: calc(100% - 16px);
+}
+
+/**
+ * MD 基础主题样式
+ * 包含所有元素的基础样式和 CSS 变量定义
+ */
+
+/* ==================== 容器样式 ==================== */
+section,
+container {
+  font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* 确保 #output 容器应用基础样式 */
+#output {
+  font-family: -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* 去除第一个元素的 margin-top */
+#output section > :first-child {
+  margin-top: 0 !important;
+}
+
+.mermaid-diagram .nodeLabel p {
+  color: unset !important;
+  letter-spacing: unset !important;
+}
+
+
+/**
+ * MD 默认主题（经典主题）
+ * 按 Alt/Option + Shift + F 可格式化
+ * 如需使用主题色，请使用 var(--md-primary-color) 代替颜色值
+ */
+
+/* ==================== 一级标题 ==================== */
+h1 {
+  display: table;
+  padding: 0 1em;
+  border-bottom: 2px solid #FA5151;
+  margin: 2em auto 1em;
+  color: hsl(0 0% 15%);
+  font-size: 19.2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==================== 二级标题 ==================== */
+h2 {
+  display: table;
+  padding: 0 0.2em;
+  margin: 4em auto 2em;
+  color: #fff;
+  background: #FA5151;
+  font-size: 19.2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==================== 三级标题 ==================== */
+h3 {
+  padding-left: 8px;
+  border-left: 3px solid #FA5151;
+  margin: 2em 8px 0.75em 0;
+  color: hsl(0 0% 15%);
+  font-size: 17.6px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* ==================== 四级标题 ==================== */
+h4 {
+  margin: 2em 8px 0.5em;
+  color: #FA5151;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ==================== 五级标题 ==================== */
+h5 {
+  margin: 1.5em 8px 0.5em;
+  color: #FA5151;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ==================== 六级标题 ==================== */
+h6 {
+  margin: 1.5em 8px 0.5em;
+  font-size: 16px;
+  color: #FA5151;
+}
+
+/* ==================== 段落 ==================== */
+p {
+  margin: 1.5em 8px;
+  letter-spacing: 0.1em;
+  color: hsl(0 0% 15%);
+}
+
+/* ==================== 引用块 ==================== */
+blockquote {
+  font-style: normal;
+  padding: 1em;
+  border-left: 4px solid #FA5151;
+  border-radius: 6px;
+  color: hsl(0 0% 15%);
+  background: #f7f7f7;
+  margin-bottom: 1em;
+}
+
+blockquote > p {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: hsl(0 0% 15%);
+  margin: 0;
+}
+
+/* ==================== GFM 警告块 ==================== */
+.alert-title-note,
+.alert-title-tip,
+.alert-title-info,
+.alert-title-important,
+.alert-title-warning,
+.alert-title-caution,
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr,
+.alert-title-todo,
+.alert-title-success,
+.alert-title-done,
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq,
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing,
+.alert-title-danger,
+.alert-title-error,
+.alert-title-bug,
+.alert-title-example,
+.alert-title-quote,
+.alert-title-cite {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.alert-title-note {
+  color: #478be6;
+}
+
+.alert-title-tip {
+  color: #57ab5a;
+}
+
+.alert-title-info {
+  color: #93c5fd;
+}
+
+.alert-title-important {
+  color: #986ee2;
+}
+
+.alert-title-warning {
+  color: #c69026;
+}
+
+.alert-title-caution {
+  color: #e5534b;
+}
+
+/* Obsidian-style callout colors */
+.alert-title-abstract,
+.alert-title-summary,
+.alert-title-tldr {
+  color: #00bfff;
+}
+
+.alert-title-todo {
+  color: #478be6;
+}
+
+.alert-title-success,
+.alert-title-done {
+  color: #57ab5a;
+}
+
+.alert-title-question,
+.alert-title-help,
+.alert-title-faq {
+  color: #c69026;
+}
+
+.alert-title-failure,
+.alert-title-fail,
+.alert-title-missing {
+  color: #e5534b;
+}
+
+.alert-title-danger,
+.alert-title-error {
+  color: #e5534b;
+}
+
+.alert-title-bug {
+  color: #e5534b;
+}
+
+.alert-title-example {
+  color: #986ee2;
+}
+
+.alert-title-quote,
+.alert-title-cite {
+  color: #9ca3af;
+}
+
+/* GFM Alert SVG 图标颜色 */
+.alert-icon-note {
+  fill: #478be6;
+}
+
+.alert-icon-tip {
+  fill: #57ab5a;
+}
+
+.alert-icon-info {
+  fill: #93c5fd;
+}
+
+.alert-icon-important {
+  fill: #986ee2;
+}
+
+.alert-icon-warning {
+  fill: #c69026;
+}
+
+.alert-icon-caution {
+  fill: #e5534b;
+}
+
+/* Obsidian-style callout icon colors */
+.alert-icon-abstract,
+.alert-icon-summary,
+.alert-icon-tldr {
+  fill: #00bfff;
+}
+
+.alert-icon-todo {
+  fill: #478be6;
+}
+
+.alert-icon-success,
+.alert-icon-done {
+  fill: #57ab5a;
+}
+
+.alert-icon-question,
+.alert-icon-help,
+.alert-icon-faq {
+  fill: #c69026;
+}
+
+.alert-icon-failure,
+.alert-icon-fail,
+.alert-icon-missing {
+  fill: #e5534b;
+}
+
+.alert-icon-danger,
+.alert-icon-error {
+  fill: #e5534b;
+}
+
+.alert-icon-bug {
+  fill: #e5534b;
+}
+
+.alert-icon-example {
+  fill: #986ee2;
+}
+
+.alert-icon-quote,
+.alert-icon-cite {
+  fill: #9ca3af;
+}
+
+/* ==================== 代码块 ==================== */
+pre.code__pre,
+.hljs.code__pre {
+  font-size: 90%;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 0 !important;
+  line-height: 1.5;
+  margin: 10px 8px;
+}
+
+/* ==================== 图片 ==================== */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0.1em auto 0.5em;
+  border-radius: 4px;
+}
+
+/* ==================== 列表 ==================== */
+ol {
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(0 0% 15%);
+}
+
+ul {
+  list-style: circle;
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(0 0% 15%);
+}
+
+li {
+  display: block;
+  margin: 0.2em 8px;
+  color: hsl(0 0% 15%);
+}
+
+/* ==================== 脚注 ==================== */
+/* footnotes 在 buildFootnotes() 中渲染为 <p> 标签 */
+p.footnotes {
+  margin: 0.5em 8px;
+  font-size: 80%;
+  color: hsl(0 0% 15%);
+}
+
+/* ==================== 图表 ==================== */
+figure {
+  margin: 1.5em 8px;
+  color: hsl(0 0% 15%);
+}
+
+figcaption,
+.md-figcaption {
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* ==================== 分隔线 ==================== */
+hr {
+  border-style: solid;
+  border-width: 2px 0 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1, 0.5);
+  transform-origin: 0 0;
+  transform: scale(1, 0.5);
+  height: 0.4em;
+  margin: 1.5em 0;
+}
+
+/* ==================== 行内代码 ==================== */
+code {
+  font-size: 90%;
+  color: #d14;
+  background: rgba(27, 31, 35, 0.05);
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+/* 代码块内的 code 标签需要特殊处理（覆盖行内 code 样式） */
+pre.code__pre > code,
+.hljs.code__pre > code {
+  display: block;
+  padding: 0.5em 1em 1em;
+  overflow-x: auto;
+  text-indent: 0;
+  color: inherit;
+  background: none;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+}
+
+/* ==================== 强调 ==================== */
+em {
+  font-style: italic;
+  font-size: inherit;
+}
+
+/* ==================== 链接 ==================== */
+a {
+  color: #576b95;
+  text-decoration: none;
+}
+
+/* ==================== 粗体 ==================== */
+strong {
+  color: #FA5151;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+/* ==================== 表格 ==================== */
+table {
+  color: hsl(0 0% 15%);
+}
+
+thead {
+  font-weight: bold;
+  color: hsl(0 0% 15%);
+}
+
+th {
+  border: 1px solid #dfdfdf;
+  padding: 0.25em 0.5em;
+  color: hsl(0 0% 15%);
+  word-break: keep-all;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+td {
+  border: 1px solid #dfdfdf;
+  padding: 0.25em 0.5em;
+  color: hsl(0 0% 15%);
+  word-break: keep-all;
+}
+
+/* ==================== KaTeX 公式 ==================== */
+.katex-inline {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.katex-block {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
+/* ==================== 标记高亮 ==================== */
+.markup-highlight {
+  background-color: #FA5151;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.markup-underline {
+  text-decoration: underline;
+  text-decoration-color: #FA5151;
+}
+
+.markup-wavyline {
+  text-decoration: underline wavy;
+  text-decoration-color: #FA5151;
+  text-decoration-thickness: 2px;
+}
+
+
+/**
+ * MD 优雅主题 (@brzhang)
+ * 在默认主题基础上添加优雅的视觉效果
+ */
+
+/* ==================== 标题样式 ==================== */
+h1 {
+  padding: 0.5em 1em;
+  border-bottom: 2px solid #FA5151;
+  font-size: 22.4px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  padding: 0.3em 1em;
+  border-radius: 8px;
+  font-size: 20.8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  padding-left: 12px;
+  font-size: 19.2px;
+  border-left: 4px solid #FA5151;
+  border-bottom: 1px dashed #FA5151;
+}
+
+h4 {
+  font-size: 17.6px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+/* ==================== 引用块 ==================== */
+blockquote {
+  font-style: italic;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid #FA5151;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1em;
+}
+
+.markdown-alert {
+  font-style: italic;
+}
+
+/* ==================== 代码块 ==================== */
+pre.code__pre,
+.hljs.code__pre {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+pre.code__pre > code,
+.hljs.code__pre > code {
+  font-family: 'Fira Code', Menlo, Operator Mono, Consolas, Monaco, monospace;
+}
+
+/* ==================== 图片 ==================== */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+figcaption,
+.md-figcaption {
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+}
+
+/* ==================== 列表 ==================== */
+ol {
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5em;
+}
+
+li {
+  margin: 0.5em 8px;
+}
+
+/* ==================== 分隔线 ==================== */
+hr {
+  height: 1px;
+  border: none;
+  margin: 2em 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+
+/* ==================== 表格 ==================== */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  margin: 1em 8px;
+  color: hsl(0 0% 15%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+thead {
+  color: #fff;
+}
+
+td {
+  padding: 0.5em 1em;
+}
+
+/* ==================== 强调 ==================== */
+em {
+  font-style: italic;
+  font-size: inherit;
+}
+
+/* ==================== 链接 ==================== */
+a {
+  color: #576b95;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+  <div style="width: 100%; max-width: 100%; margin: 0 auto; padding: 20px; background: white; position: relative; min-height: 100%; font-size: 14px; box-sizing: border-box; outline: none; transition: all 300ms ease-in-out; word-wrap: break-word;">
+    <div id="output"><section class="container"><h1 class="h1" data-heading="true">开封郑州洛阳五日：一路向西的古都短途</h1><blockquote class="blockquote"><p class="p">配图放 <a href="./assets/" title="assets/">assets/</a>。正文已定稿，地图和现场照待补。</p></blockquote><hr class="hr"></hr><h2 class="h2" data-heading="true">一、开场</h2><p class="p">这次印象最深的是清明上河园的夜灯。孩子四岁，全程跟下来最喜欢的居然不是园子，也不是石窟本身，是龙门门口的水幕。</p><p class="p">2026 年 6 月 9 到 14 号，一家三口自驾，计划五日：邯郸过夜，再串开封、郑州、洛阳，返程顺路新乡胖东来。走下来一路都满意、都值得去；只是 D5 时间来不及、又怕开夜路，中途在邯郸多停了一晚，变成六天回家。</p><p class="p">一路向西，古都连着古都。如果只记一个点，就是清明上河园。</p><hr class="hr"></hr><h2 class="h2" data-heading="true">二、这篇适合谁</h2><p class="p">适合想一次看几个河南点、能接受每天挪地方的人。五天里几乎天天换城，开封玩两天，郑州洛阳各过一晚，返程还要绕新乡。</p><p class="p">不太适合两种人：一种是只想深耕一座城、把开封或洛阳吃透；一种是讨厌开车赶路——这次就是靠自驾串起来的。</p><p class="p">真实节奏稍微有点赶，整体能接受。不是特种兵刷景，也不是躺平；最紧的是最后一天，怕夜路，才多住了一晚。</p><hr class="hr"></hr><h2 class="h2" data-heading="true">三、总览：我们实际怎么走的</h2><section style="max-width: 100%; overflow: auto">
+  <table class="preview-table">
+    <thead><th class="th">天</th><th class="th">计划</th><th class="th">实际</th><th class="th">一句话评价</th></thead>
+    <tbody><tr class="tr"><td class="td">D1</td><td class="td">天津 → 邯郸（夜景早睡）</td><td class="td">晚到酒店，没出去</td><td class="td">纯赶路，夜景直接砍</td></tr><tr class="tr"><td class="td">D2</td><td class="td">丛台公园 → 开封 · 清明上河园</td><td class="td">丛台遛娃 + 邯郸道买文创 → 清园（东京梦华 + 夜景）</td><td class="td">最值的一天，热，孩子也看得住</td></tr><tr class="tr"><td class="td">D3</td><td class="td">开封补玩 → 郑州</td><td class="td">岳飞枪挑小梁王 + NPC 赚银票 → 郑州</td><td class="td">互动好玩，表演要早占位</td></tr><tr class="tr"><td class="td">D4</td><td class="td">河南博物院 + 蜜雪总部 → 洛阳龙门</td><td class="td">博物院 + 蜜雪 → 龙门亮灯（跟团官方讲解）</td><td class="td">龙门好看也好拍，台阶多，带娃累</td></tr><tr class="tr"><td class="td">D5</td><td class="td">白马寺 → 新乡胖东来 → 天津</td><td class="td">汉魏洛阳故城遗址博物馆 → 胖东来 → 邯郸过夜</td><td class="td">白马寺砍了，胖东来车位紧，赶不回家</td></tr><tr class="tr"><td class="td">D6</td><td class="td">（无）</td><td class="td">邯郸 → 天津</td><td class="td">临时加的赶路日</td></tr></tbody>
+  </table>
+</section><p class="p">总结：</p><blockquote class="blockquote"><p class="p">实际路线：天津 → 邯郸 → 开封两天 → 郑州一夜 → 洛阳龙门 → 新乡胖东来 → 邯郸再住一晚 → 回天津。<br>最值的是清明上河园那两天，夜灯和东京梦华是整趟高潮。<br>最累的是龙门石窟：台阶多、地面不适合推车，带孩子爬上爬下。<br>若重来，会给洛阳多留时间——龙门亮灯照去，洛邑古城、白马寺这次都没排上，行程还临时改了。</p></blockquote><hr class="hr"></hr><h2 class="h2" data-heading="true">四、地图总览</h2><p class="p">全程向西再折返：天津 — 邯郸 — 开封 — 郑州 — 洛阳 — 新乡 — 邯郸 — 天津。</p><p class="p">核心点：清明上河园、河南博物院、蜜雪总部、龙门石窟、汉魏洛阳故城遗址博物馆、胖东来。</p><figure><img src="./assets/map.png" alt="地图总览"/><figcaption class="figcaption">地图总览</figcaption></figure><hr class="hr"></hr><h2 class="h2" data-heading="true">五、分日回顾</h2><h3 class="h3" data-heading="true">D1 赶路到邯郸</h3><p class="p">下午从天津出发，到如家 neo 东站店已经很晚，没再出去。计划里的邯郸道 / 学步桥夜景，直接砍了。</p><p class="p">这天没有「最推荐」，就是把路开完、早点睡。高层房间电梯慢，好在酒店门口能停车。</p><p class="p">晚饭在酒店附近面馆，拌米线挺好吃，赶路日吃这个满意。</p><figure><img src="./assets/邯郸道街区.JPG" alt="邯郸道街区"/><figcaption class="figcaption">邯郸道街区</figcaption></figure><h3 class="h3" data-heading="true">D2 开封 · 清明上河园</h3><p class="p">早上孩子在丛台公园玩，不晒，适合遛娃；我去旁边邯郸道历史文化街区逛了一圈，买了点文创。中午前出发，下午进清明上河园，晚上看了《大宋·东京梦华》，再看夜灯。</p><p class="p">最推荐东京梦华——孩子看得很认真，并没有不耐烦，体验很好。夜景也漂亮。天气有点热，园内人多，出来比较堵。</p><p class="p">两天晚饭都在清园里吃小吃，满意。当晚住锦江之星金明广场店：住得还行，停车位太少，前台人少忙不过来，一直在等。</p><figure><img src="./assets/清园东京梦华.JPG" alt="清园东京梦华"/><figcaption class="figcaption">清园东京梦华</figcaption></figure><h3 class="h3" data-heading="true">D3 开封收尾 → 郑州</h3><p class="p">继续泡在清明上河园。这天主线是和各个 NPC 互动、赚银票；另外看了「岳飞枪挑小梁王」。</p><p class="p">最推荐把赚银票当正事玩——比走马观花逛园有意思。坑是表演：岳飞枪挑小梁王要早点去，否则位置不好。</p><p class="p">天黑前开到郑州，住如家 neo 二七大卫城店。附近有商场，吃饭方便；停车位同样少。晚饭在商家里吃了小火锅，另去了小 V 家火锅鸡，都满意。</p><figure><img src="./assets/清园交子.JPG" alt="清园交子"/><figcaption class="figcaption">清园交子</figcaption></figure><h3 class="h3" data-heading="true">D4 郑州博物 + 蜜雪 → 洛阳龙门</h3><p class="p">上午河南博物院，中午蜜雪冰城总部打个卡，午饭后开去洛阳，下午加傍晚逛龙门，等到亮灯。讲解是和其他游客一起约的官方场。</p><p class="p">博物院印象不深，存在感偏弱。还能想起的一个点：孩子问为什么展台里有个人，走近一看是金缕玉衣。龙门才是这天的高潮——亮灯好看好拍，体验感比莫高窟好太多。（对，莫高窟给我的印象太差，时不时就拉踩一下）</p><p class="p">最推荐龙门亮灯。坑也在龙门：台阶多、地面不适合推车，带孩子爬上爬下还是有点累。孩子最喜欢的反而是门口的水幕。</p><p class="p">洛阳没怎么吃到美食。住如家精选洛邑古城店，送了小扇子；车要停附近停车场，酒店有小摆渡车接送。洛邑古城本身没来得及逛。</p><figure><img src="./assets/龙门亮灯.JPG" alt="龙门亮灯"/><figcaption class="figcaption">龙门亮灯</figcaption></figure><h3 class="h3" data-heading="true">D5 故城博物馆 → 胖东来 → 邯郸</h3><p class="p">白马寺临时改成汉魏洛阳故城遗址博物馆，就在白马寺旁边。人很少，体验中等；时间不够的话可以去掉。洛阳过去有一段乡间小路，导航要留意。</p><p class="p">之后北上新乡胖东来。出发前就查过会很堵，车停在对角的停车场，车位还是紧张。自营买了不少：洗脸巾、洗衣凝珠、湿巾，也买了包装食品带走。商场里现吃的小吃一般。非自驾的话，要提前想东西怎么拿。</p><p class="p">原计划当天开回天津，时间不够、又怕夜路，改在邯郸再住一晚。住的是如家商旅开发区火车东站：服务一般，后来发现遗落了东西，酒店也没主动通知。</p><h3 class="h3" data-heading="true">D6 邯郸 → 回家</h3><p class="p">纯赶路。五日计划多出来的一天，就为了不当晚开夜路。</p><hr class="hr"></hr><h2 class="h2" data-heading="true">六、安利与避雷</h2><h3 class="h3" data-heading="true">必去 Top 3</h3><ol class="ol"><li class="listitem">1. <strong class="strong">清明上河园</strong>——两天都没玩腻。东京梦华孩子看得住，夜灯是整趟最亮的画面；第二天跟 NPC 赚银票，比只逛景有意思。</li><li class="listitem">2. <strong class="strong">胖东来</strong>——自营货值得装一车（洗脸巾、凝珠、湿巾这些）。自驾去才比较合理；提前会查到很堵，对角停车场能停，车位照样紧。非自驾要想好怎么把东西带走。</li><li class="listitem">3. <strong class="strong">龙门石窟</strong>——亮灯好看好拍，体验比莫高窟松快。台阶多、不宜推车，带娃要预留体力和时间。门口水幕别急着过。</li></ol><h3 class="h3" data-heading="true">可去可不去</h3><ul class="ul"><li class="listitem">• <strong class="strong">丛台公园</strong>：不晒，遛娃可以；不为它专程停，邯郸早上顺路再去。</li><li class="listitem">• <strong class="strong">河南博物院</strong>：能去就去，别当行程高潮。我们印象不深，金缕玉衣是孩子问出来的。</li><li class="listitem">• <strong class="strong">蜜雪总部</strong>：打卡即可，半小时够，别排成半天。</li><li class="listitem">• <strong class="strong">汉魏洛阳故城遗址博物馆</strong>：人少、安静，体验中等；时间紧就砍，别用它硬换白马寺还觉得亏。</li></ul><h3 class="h3" data-heading="true">强烈不建议 / 可砍</h3><ul class="ul"><li class="listitem">• <strong class="strong">邯郸夜景</strong>：我们 D1 晚到直接没去，不后悔。真要看，别跟长途赶路叠同一晚。</li><li class="listitem">• <strong class="strong">洛阳只留一晚</strong>：龙门亮灯值得等，问题是时间不够。洛邑古城、白马寺这次都没去成，古都味道会薄。</li></ul><h3 class="h3" data-heading="true">对照计划：哪些注意事项事后证明很准</h3><ul class="ul"><li class="listitem">• 清明上河园<strong class="strong">赚银票可以提前查攻略</strong>，否则第二天会有点懵。</li><li class="listitem">• 胖东来<strong class="strong">必买清单可以先看好</strong>，现场又堵又想买，容易乱装。停车也是：提前查了会堵，别指望店门口，对角停车场能停，车位照样紧。</li><li class="listitem">• D5 当天洛阳 → 胖东来 → 天津，<strong class="strong">时间账很紧</strong>；怕夜路就老实拆成两天，别硬撑。</li></ul><h3 class="h3" data-heading="true">哪些其实过虑了</h3><ul class="ul"><li class="listitem">• 四岁孩子会不会在园子里、在东京梦华坐不住：实际很认真，没有不耐烦。</li><li class="listitem">• 自驾连开几天会不会很累：两人换开，高速靠辅助驾驶，总体不累；累的是景区里走路，不是方向盘。</li><li class="listitem">• 龙门会不会像莫高窟那样看得憋屈：亮灯之后反而更轻松，也更好拍。</li></ul><p class="p">总结：</p><blockquote class="blockquote"><p class="p">若只问必去：清明上河园玩透，龙门等亮灯，返程给胖东来留停车和购物时间。<br>丛台、博物院、蜜雪、故城博物馆有空再去；邯郸夜景和「一天内从洛阳开回家」可以砍。<br>计划里最该听的是：清园先做功课、胖东来先列必买、最后一天别排满。<br>最不用慌的是：带娃看演出、连续自驾——这两样我们都想得太严重。</p></blockquote><h2 class="h2" data-heading="true">七、吃住行实测</h2><h3 class="h3" data-heading="true">住</h3><section style="max-width: 100%; overflow: auto">
+  <table class="preview-table">
+    <thead><th class="th">酒店</th><th class="th">位置</th><th class="th">睡眠</th><th class="th">复住</th><th class="th">一句话</th></thead>
+    <tbody><tr class="tr"><td class="td">如家 neo 邯郸东站店</td><td class="td">门口能停车</td><td class="td">还行</td><td class="td">一般</td><td class="td">赶路过夜够用，高层电梯慢</td></tr><tr class="tr"><td class="td">锦江之星金明广场店（开封）</td><td class="td">去清园方便</td><td class="td">还行</td><td class="td">一般</td><td class="td">住得可以，车位少、前台慢</td></tr><tr class="tr"><td class="td">如家 neo 二七大卫城店（郑州）</td><td class="td">挨着商场</td><td class="td">还行</td><td class="td">愿意</td><td class="td">吃饭方便，停车位少</td></tr><tr class="tr"><td class="td">如家精选洛邑古城店（洛阳）</td><td class="td">古城旁，车停附近停车场</td><td class="td">还行</td><td class="td">愿意</td><td class="td">送小扇子，有摆渡车；古城本身没逛成</td></tr><tr class="tr"><td class="td">如家商旅开发区火车东站（邯郸，返程加住）</td><td class="td">东站附近</td><td class="td">一般</td><td class="td">不愿意</td><td class="td">服务一般，遗落东西没主动通知</td></tr></tbody>
+  </table>
+</section><p class="p">总结：</p><blockquote class="blockquote"><p class="p">开封、郑州、洛阳这三晚都够用，槽点集中在停车和前台。 郑州挨着商场最省心，洛阳摆渡车。 返程那晚邯郸商旅不推荐，临时落脚可以，别指望服务。</p></blockquote><h3 class="h3" data-heading="true">吃</h3><p class="p"><strong class="strong">邯郸</strong></p><ul class="ul"><li class="listitem">• 酒店附近面馆拌米线：赶路日吃这个，满意</li></ul><p class="p"><strong class="strong">开封</strong></p><ul class="ul"><li class="listitem">• 清园内小吃（两天都在园里解决）：方便，满意。</li></ul><p class="p"><strong class="strong">郑州</strong></p><ul class="ul"><li class="listitem">• 大卫城商家内小火锅：住店旁，省事</li><li class="listitem">• 小 V 家火锅鸡：满意</li></ul><p class="p"><strong class="strong">洛阳</strong></p><ul class="ul"><li class="listitem">• 没怎么找美食吃</li></ul><p class="p"><strong class="strong">新乡</strong></p><ul class="ul"><li class="listitem">• 胖东来商场里的小吃：一般；来这儿主要是买自营，不是冲着店里现吃</li></ul><p class="p">总结：</p><blockquote class="blockquote"><p class="p">开封两天靠园内小吃就能过；郑州商场和小 V 家火锅鸡是这趟吃得最稳的一晚。<br>洛阳几乎空白，胖东来商场里的小吃不用专门留胃。</p></blockquote><h3 class="h3" data-heading="true">行</h3><ul class="ul"><li class="listitem">• <strong class="strong">全程自驾：</strong> 两人换开，高速靠辅助驾驶，方向盘总体不累。累的是每天换城的节奏，不是车本身。</li><li class="listitem">• <strong class="strong">清园：</strong> 人多，比较堵，进出预留时间。</li><li class="listitem">• <strong class="strong">洛阳 → 汉魏故城遗址博物馆：</strong> 有一段乡间小路，导航别跟着瞎钻，留意路况。</li><li class="listitem">• <strong class="strong">胖东来：</strong> 提前查了会很堵，停对角停车场，车位还是紧。是这趟停车最费神的一站。</li><li class="listitem">• <strong class="strong">D5 返程：</strong> 洛阳出发再买再开回天津，一天不够。我们拆成邯郸过夜 + D6 回家，比硬开夜路合适。</li><li class="listitem">• <strong class="strong">哪段最省心：</strong> 开封连住两晚，不用天天搬行李；最虐的是龙门带娃爬台阶，其次是胖东来停车。</li></ul><p class="p">总结：</p><blockquote class="blockquote"><p class="p">自驾能串起来，换开 + 辅助驾驶就不累。<br>真正要预留的是：清园拥堵、龙门台阶、胖东来车位、最后一天的时间账。<br>乡间小路只出现在洛阳去故城博物馆那一段，走的话看一眼导航。</p></blockquote><hr class="hr"></hr><h2 class="h2" data-heading="true">八、收尾：写给下一个去的人</h2><p class="p">如果只去一个地方，我会留开封。清明上河园两天都值得，夜灯和东京梦华够撑起一趟短途。</p><p class="p">如果重来，我会改洛阳：龙门亮灯值得等，缺的是时间。洛邑古城、白马寺都没排上，早上又临时拿故城博物馆顶了白马寺。洛阳是几朝古都，很适合凭吊怀古，这次计划没留够，可惜了。</p><p class="p">真心话：时间很赶。一路都满意、都值得去，但想充分体验，还是要再拉长一些——尤其是洛阳，别再当成「龙门 + 第二天早上走人」。</p><p class="p">路线、吃住有疑问直接问，能想起来的我都回。</p><style>
+  .preview-wrapper pre::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px 10px 0;
+    line-height: 15px;
+    height: 15px;
+    font-weight: 600;
+  }
+</style></section></div>
+  </div>
+</body>
+</html>

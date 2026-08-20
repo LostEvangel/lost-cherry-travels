@@ -1,0 +1,11 @@
+{
+  "name": "lost-cherry-travels",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "embed-images": "node tools/embed-images.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.34.2"
+  }
+}
