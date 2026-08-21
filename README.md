@@ -79,6 +79,14 @@ node tools/compress-image.mjs trips/2026-开封郑州洛阳/assets/龙门亮灯.
 
 目标大小支持：`10M` / `10MB` / `500K` / `500KB` / 纯字节数。已小于目标则跳过。若原文件被占用，会另存为 `*.compressed.JPG` 并提示。
 
+若只要**单个可离线预览的 html**（内联 CSS + base64 图片）：
+
+```bash
+uv run python scripts/pack_single_html.py trips/2026-烟台威海/攻略.html
+```
+
+会生成同目录 `攻略.single.html`，双击即可打开，不依赖 `./assets/` 或外网 CSS。
+
 ## 远程
 
 https://github.com/LostEvangel/lost-cherry-travels
